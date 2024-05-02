@@ -1,7 +1,7 @@
 package dev.androidbroadcast.newsukraine.api
 
 import dev.androidbroadcast.newsukraine.models.NewsResponce
-import dev.androidbroadcast.newsukraine.util.Constance.Companion.API_KEY
+import dev.androidbroadcast.newsukraine.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

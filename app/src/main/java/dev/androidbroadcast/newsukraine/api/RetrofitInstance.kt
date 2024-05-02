@@ -1,11 +1,10 @@
 package dev.androidbroadcast.newsukraine.api
 
-import dev.androidbroadcast.newsukraine.util.Constance.Companion.BASE_URL
+import dev.androidbroadcast.newsukraine.util.Constants.Companion.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 
 class RetrofitInstance {
     companion object{
