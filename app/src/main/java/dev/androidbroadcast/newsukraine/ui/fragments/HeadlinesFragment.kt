@@ -124,7 +124,7 @@ class HeadlinesFragment : Fragment() {
 
 
             val isNoError = !isError
-            val isNotLoadingAndNotLastPage = !isLastPage && !isLastPage
+            val isNotLoadingAndNotLastPage = !isLoading && !isLastPage
             val isAtLastItem = firstVisibleItemPosition + visibleItemCount >= totalItemCount
             val isNotAtBeginning = firstVisibleItemPosition >= 0
             val isTotalMoreThanVisible = totalItemCount >= Constants.QUERY_PAGE_SIZE
