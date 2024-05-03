@@ -22,7 +22,7 @@ import dev.androidbroadcast.newsukraine.ui.NewsViewModel
 import dev.androidbroadcast.newsukraine.util.Constants
 import dev.androidbroadcast.newsukraine.util.Resource
 
-class HeadlinesFragment : Fragment() {
+class HeadlinesFragment : Fragment(R.layout.fragment_headlines) {
     lateinit var newsViewModel: NewsViewModel
     lateinit var newsAdapter: NewsAdapter
     lateinit var retryButton:Button

@@ -19,7 +19,7 @@ import dev.androidbroadcast.newsukraine.databinding.FragmentFavouritesBinding
 import dev.androidbroadcast.newsukraine.ui.NewsActivity
 import dev.androidbroadcast.newsukraine.ui.NewsViewModel
 
-class FavouritesFragment : Fragment() {
+class FavouritesFragment : Fragment(R.layout.fragment_favourites) {
     lateinit var newsViewModel: NewsViewModel
     lateinit var newsAdapter: NewsAdapter
     lateinit var binding: FragmentFavouritesBinding
