@@ -13,7 +13,7 @@
             app:argType="dev.androidbroadcast.newsukraine.models.Article"/>
     </fragment>
     <fragment
-        android:id="@+id/favouritesFragment2"
+        android:id="@+id/favouritesFragment"
         android:name="dev.androidbroadcast.newsukraine.ui.fragments.FavouritesFragment"
         android:label="FavouritesFragment" >
         <action
