@@ -2,6 +2,7 @@ package dev.androidbroadcast.newsukraine.ui.fragments
 
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
 import android.view.View
@@ -40,8 +41,8 @@ class HeadlinesFragment : Fragment(R.layout.fragment_headlines) {
         val inflater = requireContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val view :View = inflater.inflate(R.layout.item_error, null)
 
-        retryButton = view.findViewById(R.id.retryButton)
-        errorText = view.findViewById((R.id.errorText))
+        retryButton = itemHeadlinesError.findViewById(R.id.retryButton)
+        errorText = itemHeadlinesError.findViewById((R.id.errorText))
 
         newsViewModel = (activity as NewsActivity).newsViewModel
         setupHeadlinesRecycler()
@@ -83,6 +84,7 @@ class HeadlinesFragment : Fragment(R.layout.fragment_headlines) {
         })
 
         retryButton.setOnClickListener {
+            Log.d("HeadlinesFragment", "Retry button clicked")
             newsViewModel.getHeadlines("ua")
         }
     }

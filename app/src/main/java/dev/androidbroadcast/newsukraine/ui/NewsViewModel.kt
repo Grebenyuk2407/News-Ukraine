@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
@@ -33,6 +34,7 @@ class NewsViewModel(app: Application, val newsRepository: NewsRepository): Andro
     }
 
     fun getHeadlines(countryCode: String) = viewModelScope.launch {
+        Log.d("NewsViewModel", "Fetching headlines for country code: $countryCode")
         headlinesInternet(countryCode)
     }
 
